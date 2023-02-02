@@ -1,0 +1,143 @@
+:root{
+    /* primary */
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    /* neutral */
+    --light-grey: hsl(217, 12%, 63%);
+    --me-ium-grey: hsl(216, 12%, 24%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-Dark-blue: hsl(216, 12%, 8%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+ body{
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    background-color: var(--very-Dark-blue);
+ }
+
+
+ /* .main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--very-Dark-blue);
+ } */
+ .card,.tanks-state{
+    margin: 195px auto 80px;
+    padding:  24px ;
+    width: 327px;
+    height: 364px;
+    background-color: var(--dark-blue) ;
+    border-radius: 16px;
+ }
+ /* .card{
+   display: none;
+ } */
+ 
+ .card__icon-continer,.button-circle{
+    background-color: var(--me-ium-grey);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    margin-bottom: 22px;
+    color: var(--light-grey);
+    border: none;
+ }
+
+ .title,.thanks-state__title{
+    margin-bottom: 22px;
+    font-size: 1.6em;
+    font-weight: 400;
+    color: var(--white);
+    
+ }
+ .parrafo,.thanks-state__parrafo{
+    margin-bottom: 30px;
+    color: var(--light-grey);
+    letter-spacing: -0.5px;
+ }
+ .five-button{
+    display: flex;
+    justify-content:space-between;
+ }
+ .button-circle:hover{
+  background-color: var(--light-grey);
+  color: var(--white);
+  cursor: pointer;
+ }
+ .button-circle:focus{
+    background-color: var(--orange);
+    color: var(--white);  
+ }
+ .Submit{
+    background-color: var(--orange);
+    width: 100%;
+    height: 44px ;
+    color: var(--white);
+    border-radius: 50px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700 ;
+    letter-spacing: 3px;
+    
+ }
+ .Submit:hover{
+    color: var(--orange);
+    background-color: var(--white);
+    cursor: pointer;
+ }
+/* thks stae */
+.tanks-state{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.tanks-state__image{
+    width: 150px;
+    margin-bottom: 24px;
+}
+.thanks-state__result{
+    background-color: var(--me-ium-grey);
+    width: 170px;
+    height: 36px;
+    border-radius: 50px;
+    color: var(--orange);
+    text-align: center;
+    padding: 8px 0;
+    margin-bottom: 30px;
+    font-size: 0.9em;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 49%); }
+/* destoktop */
+@media(min-width:600px){
+   .card,.tanks-state{
+      width: 412px;
+      height: 412px;
+      padding: 34px;
+   }
+   .card__icon-continer,.button-circle{
+      width: 50px;
+      height: 50px;
+      
+   }
+   .title,.thanks-state__title{
+    font-size: 1.9em ;
+   }
+    .parrafo,.thanks-state__parrafo{
+     font-size: 1.07em;    
+   }  
+   .thanks-state__result{
+      font-size: 1em;
+      width: 196px  ;
+   }
+  
+}
